@@ -29,16 +29,21 @@
       </div>
     </div>
     <div class="side left">
-      <button class="ib" data-act="map"><i>🗺️</i><em>MAPA</em></button>
-      <button class="ib" data-act="missions"><i>📜</i><em>MISSÕES</em><s class="badge" id="mBadge">!</s></button>
+      <button class="ib" data-act="map"><i class="art"><img src="art/ui/mapa.webp" alt="" data-b="art/ui/mapa"><b class="nb" id="nb-map"></b></i><em>MAPA</em></button>
+      <button class="ib" data-act="missions"><i class="art"><img src="art/ui/missoes.webp" alt="" data-b="art/ui/missoes"><b class="nb" id="nb-missions"></b></i><em>MISSÕES</em></button>
     </div>
     <div class="side right">
-      <button class="ib" data-act="bag"><i>🎒</i><em>MOCHILA</em></button>
-      <button class="ib" data-act="rod"><i>🎣</i><em>VARA</em></button>
+      <button class="ib" data-act="bag"><i class="art"><img src="art/ui/mochila.webp" alt="" data-b="art/ui/mochila"><b class="nb" id="nb-bag"></b></i><em>MOCHILA</em></button>
+      <button class="ib" data-act="rod"><i class="art"><img src="art/ui/vara.webp" alt="" data-b="art/ui/vara"><b class="nb" id="nb-rod"></b></i><em>VARA</em></button>
     </div>
-    <button id="npc" data-act="npc"><i id="npcFace">👴</i><s id="npcBadge">!</s><em id="npcName">Vô Tião</em></button>
+    <button id="npc" data-act="npc"><i id="npcFace" class="art"><img src="art/npc/tiao_icone.webp" alt=""><b class="nb" id="nb-npc"></b></i><em id="npcName">Vô Tião</em></button>
     <div id="hint"></div>
     <div id="toast"></div>
+    <div id="talk" data-act="dialog">
+      <img id="tChar" alt="">
+      <div id="tBub"><b id="tName"></b><p id="tText"></p></div>
+      <button id="tNext" data-act="dialog">▶</button>
+    </div>
     <div id="dialog" data-act="dialog">
       <div class="face" id="dFace">👴</div>
       <div class="dtext"><b id="dName">Vô Tião</b><p id="dText"></p><small>toque para continuar ▸</small></div>
