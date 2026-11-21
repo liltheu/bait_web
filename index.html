@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#1d7e93">
+<title>Bait</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Bait">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game"></canvas>
+  <div id="ui">
+    <div class="top">
+      <button class="pill loc" data-act="map"><span>📍</span><b id="locName">Rio Sereno</b></button>
+      <div class="tr">
+        <div class="pill money"><span>🪙</span><b id="coins">0</b><button class="plus" data-act="adcoins">+</button></div>
+        <div class="row2">
+          <div class="pill small"><span>💎</span><b id="gems">0</b></div>
+          <div class="pill small"><span id="clockIc">☀️</span><b id="clock">10:24</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="side left">
+      <button class="ib" data-act="map"><i>🗺️</i><em>MAPA</em></button>
+      <button class="ib" data-act="missions"><i>📜</i><em>MISSÕES</em><s class="badge" id="mBadge">!</s></button>
+    </div>
+    <div class="side right">
+      <button class="ib" data-act="bag"><i>🎒</i><em>MOCHILA</em></button>
+      <button class="ib" data-act="rod"><i>🎣</i><em>VARA</em></button>
+    </div>
+    <button id="npc" data-act="npc"><i id="npcFace">👴</i><s id="npcBadge">!</s><em id="npcName">Vô Tião</em></button>
+    <div id="hint"></div>
+    <div id="toast"></div>
+    <div id="dialog" data-act="dialog">
+      <div class="face" id="dFace">👴</div>
+      <div class="dtext"><b id="dName">Vô Tião</b><p id="dText"></p><small>toque para continuar ▸</small></div>
+    </div>
+    <div id="modal">
+      <div class="panel">
+        <div class="ph"><h2 id="mTitle"></h2><button class="x" data-act="close">✕</button></div>
+        <div class="pb" id="mBody"></div>
+      </div>
+    </div>
+    <div id="ad"><div class="adbox"><b>ANÚNCIO</b><p>(simulação, o AdMob entra aqui depois)</p><div class="adc" id="adCount">3</div></div></div>
+  </div>
+</div>
+<script src="game.js"></script>
+<script>if ('serviceWorker' in navigator && location.protocol === 'https:' && location.hostname !== 'localhost') navigator.serviceWorker.register('sw.js');</script>
+</body>
+</html>
