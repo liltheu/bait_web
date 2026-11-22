@@ -12,7 +12,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=93dcc1ec">
+<link rel="stylesheet" href="style.css?v=4b8d1325">
 </head>
 <body>
 <div id="wrap">
@@ -48,6 +48,16 @@
       <div class="face" id="dFace">👴</div>
       <div class="dtext"><b id="dName">Vô Tião</b><p id="dText"></p><small>toque para continuar ▸</small></div>
     </div>
+    <div id="catch">
+      <div class="cRays"></div>
+      <div class="cBox">
+        <div class="cFish"><img class="cSplash" src="art/pesca/splash.webp" alt=""><div id="cFishImg"></div><b id="cNew">NOVO!</b><b id="cGem"></b></div>
+        <div class="cRib"><img src="art/pesca/faixa.webp" alt=""><svg viewBox="0 0 720 232"><path id="cArc" d="M40,138 A760,760 0 0 1 680,138" fill="none"/><text id="cName" text-anchor="middle" dominant-baseline="central"><textPath href="#cArc" startOffset="50%"></textPath></text></svg></div>
+        <div class="cRar"><img id="cRarImg" alt=""><b id="cRar"></b></div>
+        <div class="cInfo"><img src="art/pesca/info.webp" alt=""><b id="cSize"></b><b id="cVal"></b></div>
+        <div class="cBtns"><button data-act="sell"><img src="art/pesca/vender.webp" alt="Vender"></button><button class="cX2" data-act="double" id="cAd">📺<b>x2</b></button><button data-act="keep"><img src="art/pesca/guardar.webp" alt="Guardar"></button></div>
+      </div>
+    </div>
     <div id="modal">
       <div class="panel">
         <div class="ph"><h2 id="mTitle"></h2><button class="x" data-act="close">✕</button></div>
@@ -57,7 +67,7 @@
     <div id="ad"><div class="adbox"><b>ANÚNCIO</b><p>(simulação, o AdMob entra aqui depois)</p><div class="adc" id="adCount">3</div></div></div>
   </div>
 </div>
-<script src="game.js?v=93dcc1ec"></script>
+<script src="game.js?v=4b8d1325"></script>
 <script>if ('serviceWorker' in navigator && location.protocol === 'https:' && location.hostname !== 'localhost') { const had = !!navigator.serviceWorker.controller; navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(r => r.update()); navigator.serviceWorker.addEventListener('controllerchange', () => { if (had) location.reload(); }); }</script>
 </body>
 </html>
