@@ -12,7 +12,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=64513e29">
+<link rel="stylesheet" href="style.css?v=1dbaeaeb">
 </head>
 <body>
 <div id="wrap">
@@ -21,7 +21,7 @@
     <div class="top">
       <button class="pill loc hud hl" data-act="map"><b id="locName">Rio Sereno</b></button>
       <div class="tr">
-        <div class="pill small hud hh"><span id="clockIc"></span><b id="clock">10:24</b></div>
+        <div class="pill small hud hh" data-act="clock"><span id="clockIc"></span><b id="clock">10:24</b></div>
         <div class="pill money hud hm"><b id="coins">0</b><button class="plus" data-act="adcoins"><img src="art/hud/mais.webp" alt="+"></button></div>
         <div class="pill small hud hg"><b id="gems">0</b><button class="plus" data-act="shopgems"><img src="art/hud/mais.webp" alt="+"></button></div>
       </div>
@@ -35,6 +35,7 @@
       <button class="ib" data-act="rod"><i class="art"><img src="art/ui/vara.webp" alt="" data-b="art/ui/vara"><b class="nb" id="nb-rod"></b></i><em>VARA</em></button>
     </div>
     <button id="npc" data-act="npc"><i id="npcFace" class="art"><img src="art/npc/tiao_icone.webp" alt=""><b class="nb" id="nb-npc"></b></i><em id="npcName">Vô Tião</em></button>
+    <button id="admBtn" class="hud" data-act="admpanel">ADM</button>
     <div id="hint"></div>
     <div id="toast"></div>
     <div id="talk" data-act="dialog">
@@ -78,7 +79,7 @@
     <div id="ad"><div class="adbox"><b>ANÚNCIO</b><p>(simulação, o AdMob entra aqui depois)</p><div class="adc" id="adCount">3</div></div></div>
   </div>
 </div>
-<script src="game.js?v=64513e29"></script>
+<script src="game.js?v=1dbaeaeb"></script>
 <script>if ('serviceWorker' in navigator && location.protocol === 'https:' && location.hostname !== 'localhost') { const had = !!navigator.serviceWorker.controller; navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(r => r.update()); navigator.serviceWorker.addEventListener('controllerchange', () => { if (had) location.reload(); }); }</script>
 </body>
 </html>
