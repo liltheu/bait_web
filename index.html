@@ -12,20 +12,18 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=4b8d1325">
+<link rel="stylesheet" href="style.css?v=a956027e">
 </head>
 <body>
 <div id="wrap">
   <canvas id="game"></canvas>
   <div id="ui">
     <div class="top">
-      <button class="pill loc" data-act="map"><span>📍</span><b id="locName">Rio Sereno</b></button>
+      <button class="pill loc hud hl" data-act="map"><b id="locName">Rio Sereno</b></button>
       <div class="tr">
-        <div class="pill money"><span>🪙</span><b id="coins">0</b><button class="plus" data-act="adcoins">+</button></div>
-        <div class="row2">
-          <div class="pill small"><span>💎</span><b id="gems">0</b></div>
-          <div class="pill small"><span id="clockIc">☀️</span><b id="clock">10:24</b></div>
-        </div>
+        <div class="pill small hud hh"><span id="clockIc"></span><b id="clock">10:24</b></div>
+        <div class="pill money hud hm"><b id="coins">0</b><button class="plus" data-act="adcoins"><img src="art/hud/mais.webp" alt="+"></button></div>
+        <div class="pill small hud hg"><b id="gems">0</b><button class="plus" data-act="shopgems"><img src="art/hud/mais.webp" alt="+"></button></div>
       </div>
     </div>
     <div class="side left">
@@ -58,6 +56,14 @@
         <div class="cBtns"><button data-act="sell"><img src="art/pesca/vender.webp" alt="Vender"></button><button class="cX2" data-act="double" id="cAd">📺<b>x2</b></button><button data-act="keep"><img src="art/pesca/guardar.webp" alt="Guardar"></button></div>
       </div>
     </div>
+    <div id="bag">
+      <div class="bq"><div class="bqf"></div>
+        <div class="bqh"><img class="bqi" id="bqIcon" alt=""><h2 id="bqTitle">Mochila</h2>
+          <button class="bqback" data-act="bagback" id="bqBack"><span>‹</span><b id="bqBackTxt">Coleção</b></button>
+          <button class="bqx" data-act="bagclose"><img src="art/bag/fechar.webp" alt="Fechar"></button></div>
+        <div class="bqb" id="bqBody"></div>
+      </div>
+    </div>
     <div id="modal">
       <div class="panel">
         <div class="ph"><h2 id="mTitle"></h2><button class="x" data-act="close">✕</button></div>
@@ -67,7 +73,7 @@
     <div id="ad"><div class="adbox"><b>ANÚNCIO</b><p>(simulação, o AdMob entra aqui depois)</p><div class="adc" id="adCount">3</div></div></div>
   </div>
 </div>
-<script src="game.js?v=4b8d1325"></script>
+<script src="game.js?v=a956027e"></script>
 <script>if ('serviceWorker' in navigator && location.protocol === 'https:' && location.hostname !== 'localhost') { const had = !!navigator.serviceWorker.controller; navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(r => r.update()); navigator.serviceWorker.addEventListener('controllerchange', () => { if (had) location.reload(); }); }</script>
 </body>
 </html>
