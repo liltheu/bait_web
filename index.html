@@ -12,7 +12,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=a956027e">
+<link rel="stylesheet" href="style.css?v=64513e29">
 </head>
 <body>
 <div id="wrap">
@@ -64,6 +64,11 @@
         <div class="bqb" id="bqBody"></div>
       </div>
     </div>
+    <div id="rods">
+      <div class="rhd"><button class="rback" data-act="rodsclose"><img src="art/varas/ui/voltar.webp" alt="Voltar"></button>
+        <button class="radmin" data-act="rodadmin" title="Admin: liberar tudo">ADM</button></div>
+      <div class="rscroll" id="rBody"></div>
+    </div>
     <div id="modal">
       <div class="panel">
         <div class="ph"><h2 id="mTitle"></h2><button class="x" data-act="close">✕</button></div>
@@ -73,7 +78,7 @@
     <div id="ad"><div class="adbox"><b>ANÚNCIO</b><p>(simulação, o AdMob entra aqui depois)</p><div class="adc" id="adCount">3</div></div></div>
   </div>
 </div>
-<script src="game.js?v=a956027e"></script>
+<script src="game.js?v=64513e29"></script>
 <script>if ('serviceWorker' in navigator && location.protocol === 'https:' && location.hostname !== 'localhost') { const had = !!navigator.serviceWorker.controller; navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(r => r.update()); navigator.serviceWorker.addEventListener('controllerchange', () => { if (had) location.reload(); }); }</script>
 </body>
 </html>
