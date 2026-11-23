@@ -12,7 +12,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=273ac4bc">
+<link rel="stylesheet" href="style.css?v=0ef1efac">
 </head>
 <body>
 <div id="wrap">
@@ -36,6 +36,7 @@
     </div>
     <button id="npc" data-act="npc"><i id="npcFace" class="art"><img src="art/npc/tiao_icone.webp" alt=""><b class="nb" id="nb-npc"></b></i><em id="npcName">Vô Tião</em></button>
     <button id="eyeBtn" data-act="hud" aria-label="Esconder botões"><svg viewBox="0 0 24 24" fill="none" stroke="#5a2d0e" stroke-width="1.7" stroke-linecap="round"><g class="op"><path d="M3 12C7 5 17 5 21 12C17 19 7 19 3 12Z" fill="#fff"/><circle cx="12" cy="12" r="3.6" fill="#5a2d0e" stroke="none"/><circle cx="13.3" cy="10.7" r="1.1" fill="#fff" stroke="none"/><path d="M12 6.6V3.6M8 7.3L7 4.7M16 7.3L17 4.7M5 9.1L3.4 7.2M19 9.1L20.6 7.2"/></g><g class="cl"><path d="M3 11C7 17 17 17 21 11"/><path d="M12 15.5V18.6M8 14.8L7 17.4M16 14.8L17 17.4M5 13.2L3.4 15.1M19 13.2L20.6 15.1"/></g></svg></button>
+    <button id="cfgBtn" class="hud" data-act="cfg" aria-label="Configurações"><img src="art/cfg/engrenagem.webp" alt=""></button>
     <button id="admBtn" class="hud" data-act="admpanel">ADM</button>
     <div id="hint"></div>
     <div id="toast"></div>
@@ -66,6 +67,18 @@
         <div class="bqb" id="bqBody"></div>
       </div>
     </div>
+    <div id="cfg" data-act="cfgclose">
+      <div class="cfgp" data-act="noop"><button class="cfgx" data-act="cfgclose" aria-label="Fechar"></button>
+        <div class="cfgb">
+          <div class="crow"><img class="cic" src="art/cfg/ic_musica.webp" alt=""><div class="cr"><b>Música</b><div class="csl" data-k="mus"><i class="cfl"></i><img class="ckn" src="art/cfg/bola.webp" alt=""></div></div></div>
+          <div class="crow"><img class="cic" src="art/cfg/ic_efeitos.webp" alt=""><div class="cr"><b>Efeitos</b><div class="csl" data-k="fx"><i class="cfl"></i><img class="ckn" src="art/cfg/bola.webp" alt=""></div></div></div>
+          <div class="crow"><img class="cic" src="art/cfg/ic_ambiente.webp" alt=""><div class="cr"><b>Ambiente</b><div class="csl" data-k="amb"><i class="cfl"></i><img class="ckn" src="art/cfg/bola.webp" alt=""></div></div></div>
+          <div class="ctgs"><button class="ctg" data-act="cfgtg" data-k="mute"><img class="ci2" src="art/cfg/ic_mudo.webp" alt=""><b>Silenciar</b><img class="csw" alt=""></button><i class="csep"></i>
+            <button class="ctg" data-act="cfgtg" data-k="vib"><img class="ci2" src="art/cfg/ic_vibra.webp" alt=""><b>Vibração</b><img class="csw" alt=""></button></div>
+          <button class="csave" data-act="cfgsave"><img src="art/cfg/salvar.webp" alt="Salvar"></button>
+        </div>
+      </div>
+    </div>
     <div id="rods">
       <div class="rhd"><button class="rback" data-act="rodsclose"><img src="art/varas/ui/voltar.webp" alt="Voltar"></button>
         <button class="radmin" data-act="rodadmin" title="Admin: liberar tudo">ADM</button></div>
@@ -80,7 +93,7 @@
     <div id="ad"><div class="adbox"><b>ANÚNCIO</b><p>(simulação, o AdMob entra aqui depois)</p><div class="adc" id="adCount">3</div></div></div>
   </div>
 </div>
-<script src="game.js?v=273ac4bc"></script>
+<script src="game.js?v=0ef1efac"></script>
 <script>if ('serviceWorker' in navigator && location.protocol === 'https:' && location.hostname !== 'localhost') { const had = !!navigator.serviceWorker.controller; navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(r => r.update()); navigator.serviceWorker.addEventListener('controllerchange', () => { if (had) location.reload(); }); }</script>
 </body>
 </html>
